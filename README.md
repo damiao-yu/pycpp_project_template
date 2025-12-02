@@ -12,14 +12,13 @@ myproject/
 ├── LICENSE
 ├── .gitignore
 ├── cmake/
-│   ├── ProjectConfig.cmake.in  # CMake package 配置模板
-│   └── myprojectConfig.cmake.in
+│   └── ProjectConfig.cmake.in  # CMake package 配置模板
 ├── include/
 │   └── myproject/              # C++ 头文件
-│       └── mylib.hpp
+│       └── myproject.hpp
 ├── src/
 │   ├── CMakeLists.txt          # 定义 myproject_core 库并安装导出
-│   └── mylib.cpp               # C++ 实现
+│   └── myproject.cpp           # C++ 实现
 ├── bindings/
 │   ├── CMakeLists.txt
 │   └── python/
@@ -36,6 +35,12 @@ myproject/
 ```
 
 ## 构建与安装
+
+### 0. 更改项目名称
+
+```bash
+bash rename_project.sh <NEW_NAME>
+```
 
 ### 1. 纯 C++ 构建与安装
 

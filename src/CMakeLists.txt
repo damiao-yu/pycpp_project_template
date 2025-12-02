@@ -1,5 +1,5 @@
 add_library(${PROJECT_NAME}_core
-    mylib.cpp
+    myproject.cpp
 )
 
 target_include_directories(${PROJECT_NAME}_core

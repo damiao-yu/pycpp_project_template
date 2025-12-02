@@ -1,5 +1,5 @@
 #include <cassert>
-#include <myproject/mylib.hpp>
+#include <myproject/myproject.hpp>
 
 int main() {
     int value = myproject::add_one(1);
