@@ -68,7 +68,7 @@ echo "开始替换文件内容中的项目名 ..."
 find . -type f \
   ! -path "./.git/*" \
   ! -path "./build/*" \
-  \( -name "*.cpp" -o -name "*.hpp" -o -name "*.h" \
+  \( -name "*.cpp" -o -name "*.hpp" -o -name "*.h" -o \
      -name "*.py" -o -name "*.toml" -o -name "*.cmake" -o -name "*.in" \
      -name "*.md" -o -name "CMakeLists.txt" -o -name "LICENSE" -o -name "README" -o -name "README.*" \
   \) -print0 \
