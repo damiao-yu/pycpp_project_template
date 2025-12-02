@@ -4,10 +4,10 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "myproject"
-version = "0.0.1"
+version = "0.0.2"
 description = "A template project for C++ library with Python bindings"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 dependencies = []
 
 license = { text = "MIT" }
