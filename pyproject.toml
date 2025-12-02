@@ -1,0 +1,45 @@
+[build-system]
+requires = ["scikit-build-core>=0.4.0", "cmake", "ninja"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "myproject"
+version = "0.0.1"
+description = "A template project for C++ library with Python bindings"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+license = { text = "MIT" }
+authors = [
+  { name = "Da-Miao Yu", email = "damiao.yu@outlook.com" }
+]
+maintainers = [
+  { name = "Da-Miao Yu", email = "damiao.yu@outlook.com" }
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: C++",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://example.com/myproject"
+Source = "https://github.com/your-name/myproject"
+Issues = "https://github.com/your-name/myproject/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "mypy",
+  "black"
+]
+
+[tool.scikit-build]
+wheel.packages = ["bindings/python/myproject"]
